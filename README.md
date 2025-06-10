@@ -1,5 +1,20 @@
-# Scan-Porty
-A website port scanner. Basically you specify the target url and then you specify the target port.
-If the port is open, the request will be returned to the server, otherwise nothing will be returned.
+A simple TCP port scanner written in Python. It prints a banner and then checks whether a specific port is open on the given host.
 
-sudo git clone https://github.com/shadowvivierw/Scan-Porty.git
+## Usage
+
+```bash
+python3 scan-port.py <host> <port>
+```
+
+Example:
+
+```bash
+python3 scan-port.py example.com 22
+```
+
+If the port is reachable, the script will print that the port is open; otherwise it will report it as closed.
+
+
+
+
+Install: sudo git clone https://github.com/shadowvivierw/Scan-Porty.git
